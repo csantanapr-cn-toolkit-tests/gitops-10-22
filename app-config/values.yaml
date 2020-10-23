@@ -1,0 +1,18 @@
+global: {}
+
+argocd-config:
+  repoUrl: ""
+
+  project: toolkit
+
+  applicationTargets:
+    - targetRevision: test
+      targetNamespace: app-10-22-test
+      applications:
+        - name: go-app-10-22
+    - targetRevision: staging
+      targetNamespace: app-10-22-staging
+      applications:
+        - name: go-app-10-22
+
+
